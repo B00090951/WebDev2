@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Gradient used on all pages bar the  index page*/
+body {
+	background-color: #333;
+	width: 100%;
+	height: 100%;
+	
+}
+
+#container {
+	width: 1024px;
+	height:1100px;
+	border-color:#fff;
+	position:relative;
+	border-color: #222;
+	margin: auto;	
+	
+	
+}
+
+/*z-index was needed here because the dropdown menu was going behind the content. */
+
+#nav {
+	width: 1024px;
+	height: 50px;
+	position:absolute;
+	top: 300px;
+	left: 0px;
+	background: linear-gradient(90deg, #222, #396);
+	z-index: 5;
+	
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 1px 0px 0px 270px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#FC3;
+
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*End Nav*/
+
+section {
+	width: 1024PX;
+	height: 820px;
+	background-color:#222;
+	position:absolute;
+	vertical-align:top;
+	top: 350px;
+	left: 0px;
+}
+
+.about {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	-webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    column-width: 200px;
+	-webkit-column-gap: 15px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 15px; /* Firefox */
+    column-gap: 15px;
+	-webkit-column-rule-style: none; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: none; /* Firefox */
+    column-rule-style: none;
+	-webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+	-moz-column-fill: balance; /* Firefox */
+    column-fill: balance;
+	
+}
+
+
+
+.about-intro {
+	color: #fff;
+	font-size: 18px;
+	text-align:center;
+}
+
+.about {
+	color: #fff;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:12px;
+	padding: 20px;
+	vertical-align:top;
+	
+}
+
+.icon {
+	text-align:center;
+}
+
+h2 { 
+  break-before: column; 
+  break-inside: avoid-column; 
+  break-after: avoid-column;
+  text-align:center;
+}
+
+
+
+	
+
+#footer {
+	width: 1024px;
+	height: 200px;
+	background: linear-gradient(45deg, #222, #396);
+	margin: auto;
+	text-decoration: none;
+	text-align: center;
+
+	
+}
+
+.footer-content p {
+	padding: 105px 0px 0px 0px;
+}
+
