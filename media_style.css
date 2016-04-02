@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-color: #333;
+	width: 100%;
+	height: 100%;
+	
+}
+
+#container {
+	width: 1024px;
+	height:1100px;
+	border-color:#fff;
+	position:relative;
+	border-color: #222;
+	margin: auto;	
+	
+	
+}
+
+/*z-index was needed here because the dropdown menu was going behind the content. */
+
+#nav {
+	width: 1024px;
+	height: 50px;
+	position:absolute;
+	top: 300px;
+	left: 0px;
+	background: linear-gradient(90deg, #222, #FC3);
+	z-index: 5;
+	
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 1px 0px 0px 270px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#FC3;}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*End Nav*/
+
+section {
+	width: 1024PX;
+	height: 820px;
+	background-color:#222;
+	position:absolute;
+	top: 350px;
+	left: 0px;
+}
+
+section img {
+	width: 500px;
+	height: 600px;
+	margin: 40px 0px 0px 260px;
+}
+
+section p img{
+	width: 125px;
+	height: 125px;
+	margin: -2px 0px 0px 437px;
+}
+
+
+
+#footer {
+	width: 1024px;
+	height: 200px;
+	background: linear-gradient(90deg, #222, #FC3);
+	margin: auto;
+	text-decoration: none;
+	text-align: center;
+
+	
+}
+
+.footer-content p {
+	padding: 105px 0px 0px 0px;
+}
